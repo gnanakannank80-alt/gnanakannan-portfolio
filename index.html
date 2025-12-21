@@ -22,6 +22,22 @@
       color: #e5e7eb;
       line-height: 1.6;
     }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 0px #38bdf8; }
+      50% { box-shadow: 0 0 20px #38bdf8; }
+      100% { box-shadow: 0 0 0px #38bdf8; }
+    }
 
     header {
       min-height: 100vh;
@@ -31,6 +47,11 @@
       text-align: center;
       padding: 20px;
     }
+    header div {
+      animation: fadeUp 1.2s ease;
+    }
+
+
 
     header h1 {
       font-size: 3rem;
@@ -51,6 +72,7 @@
       text-decoration: none;
       font-weight: 600;
       transition: 0.3s;
+      animation: fadeUp 2s ease;
     }
 
     .btn:hover {
@@ -280,6 +302,7 @@ and work on real-world projects.
 
 </body>
 </html>
+
 
 
 
